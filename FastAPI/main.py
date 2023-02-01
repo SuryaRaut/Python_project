@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
-engine = create_engine("mysql+pymysql://snipers:Hikethebest2020@localhost/world")
+engine = create_engine("mysql+pymysql://user:password@localhost/database")
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 app = FastAPI()
